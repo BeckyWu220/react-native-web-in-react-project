@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {StyleSheet, View} from 'react-native';
-// import { BarChart, XAxis } from 'react-native-svg-charts'
-import { BarChart, XAxis } from './react-native-svg-charts'
+import { BarChart, XAxis } from 'react-native-svg-charts'
 import Svg, { Circle, Rect } from 'react-native-svg'
 
 class Chart extends Component

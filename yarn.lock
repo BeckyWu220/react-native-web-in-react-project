@@ -7340,6 +7340,13 @@ optionator@^0.8.1, optionator@^0.8.3:
     type-check "~0.3.2"
     word-wrap "~1.2.3"
 
+"ora-svg-charts@git+https://github.com/BeckyWu220/Ora-Svg-Charts.git":
+  version "1.0.0"
+  resolved "git+https://github.com/BeckyWu220/Ora-Svg-Charts.git#823df5f4c80a7ed0bbabe01f85ee263dd65a29d5"
+  dependencies:
+    react-native-svg "9.13.3"
+    react-native-svg-charts "5.2.0"
+
 original@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/original/-/original-1.0.2.tgz#e442a61cffe1c5fd20a65f3261c26663b303f25f"

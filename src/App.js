@@ -92,7 +92,8 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Chart from './Chart';
-import { PieChart } from './svg-charts';
+import { PieChart } from "ora-svg-charts";
+// import { PieChart } from './svg-charts';
 import { Button, Image, StyleSheet, Text, View } from "react-native";
 
 function App() {

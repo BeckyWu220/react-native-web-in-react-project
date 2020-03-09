@@ -361,7 +361,7 @@ module.exports = function(webpackEnv) {
             // The preset includes JSX, Flow, TypeScript, and some ESnext features.
             {
               test: /\.(js|mjs|jsx|ts|tsx)$/,
-              include: [paths.appSrc, /node_modules\/react-native-svg/, /node_modules\/ora-svg-charts/],
+              include: [paths.appSrc],
               loader: require.resolve('babel-loader'),
               options: {
                 presets: ["@babel/preset-env", "react-app", "@babel/preset-react"],

@@ -7340,12 +7340,12 @@ optionator@^0.8.1, optionator@^0.8.3:
     type-check "~0.3.2"
     word-wrap "~1.2.3"
 
-"ora-svg-charts@git+https://github.com/BeckyWu220/Ora-Svg-Charts.git":
+"ora-svg-charts@https://github.com/BeckyWu220/Ora-Svg-Charts.git#bundle":
   version "1.0.0"
-  resolved "git+https://github.com/BeckyWu220/Ora-Svg-Charts.git#823df5f4c80a7ed0bbabe01f85ee263dd65a29d5"
+  resolved "https://github.com/BeckyWu220/Ora-Svg-Charts.git#2385c161b80ff81b4d3a810da7657694301a6294"
   dependencies:
     react-native-svg "9.13.3"
-    react-native-svg-charts "5.2.0"
+    react-native-svg-charts "https://github.com/BeckyWu220/react-native-svg-charts.git#bundle"
 
 original@^1.0.0:
   version "1.0.2"
@@ -8703,6 +8703,16 @@ react-native-svg-charts@5.2.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/react-native-svg-charts/-/react-native-svg-charts-5.2.0.tgz#eda090136250d02f9d1d8c971663afaee4ed2f4f"
   integrity sha512-2cV9/QDqXdq9ve1NbTAKVO9BQrYqC69R5Tlo+LgGAIdl6BEVQbushO20vJkN4+d680KKUemyode0yJ7gNwdZNQ==
+  dependencies:
+    d3-array "^1.2.0"
+    d3-interpolate-path "2.0.0"
+    d3-scale "^1.0.6"
+    d3-shape "^1.0.6"
+    prop-types "^15.6.0"
+
+"react-native-svg-charts@https://github.com/BeckyWu220/react-native-svg-charts.git#bundle":
+  version "5.3.0"
+  resolved "https://github.com/BeckyWu220/react-native-svg-charts.git#6297774e08ef1add3c6dcf44dc80f39357606d77"
   dependencies:
     d3-array "^1.2.0"
     d3-interpolate-path "2.0.0"

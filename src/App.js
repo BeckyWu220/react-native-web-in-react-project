@@ -104,12 +104,27 @@ function App() {
             value: 50,
           }, {
             key: 'Macy',
-            value: 50
+            value: 100
           }, {
             key: 'John',
+            value: 150
+          }, {
+            key: 'Becky2',
+            value: 50,
+          }, {
+            key: 'Macy2',
             value: 50
           }
-      ]} />
+      ]}
+      onSelect={(data = null) => {
+        if (data) {
+          const { key, value } = data
+          console.log('Bar:', key, value)
+        } else {
+          console.log('Not selecting any bar.')
+        }
+      }}
+      />
       <PieChart
         data={[
           {
@@ -122,7 +137,15 @@ function App() {
             key: 'John',
             value: 50
           }
-      ]}
+        ]}
+        onSelect={(data = null) => {
+          if (data) {
+            const { key, value } = data
+            console.log('Slice:', key, value)
+          } else {
+            console.log('Not selecting any slice.')
+          }
+        }}
       />
       <Button
         title="Example button"

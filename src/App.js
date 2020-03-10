@@ -91,14 +91,25 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Chart from './Chart';
-import { PieChart } from "ora-svg-charts";
-// import { PieChart } from './svg-charts';
+import { PieChart, BarChart } from "ora-svg-charts";
 import { Button, Image, StyleSheet, Text, View } from "react-native";
 
 function App() {
   return (
     <div className="App">
+      <BarChart
+       data={[
+          {
+            key: 'Becky',
+            value: 50,
+          }, {
+            key: 'Macy',
+            value: 50
+          }, {
+            key: 'John',
+            value: 50
+          }
+      ]} />
       <PieChart
         data={[
           {

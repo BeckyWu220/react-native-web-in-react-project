@@ -91,12 +91,49 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { PieChart, BarChart } from "ora-svg-charts";
+import { PieChart, BarChart, PercentageBar, InfluenceBar, AmplitudeRange } from "ora-svg-charts";
 import { Button, Image, StyleSheet, Text, View } from "react-native";
 
 function App() {
   return (
     <div className="App">
+      <PercentageBar
+        percentage={30}
+        color={'#88A197'}
+        displayPercentage
+      />
+      <PercentageBar
+        style={{ marginTop: 10, paddingRight: 50}}
+        percentage={50}
+        color={'#4D6071'}
+        backgroundColor={'#DC8E7C'}
+        height={10}
+      />
+      <InfluenceBar
+        style={{ marginVertical: 10 }}
+        height={8}
+        influence={7}
+        range={10}
+        color={'#618980'}
+        displayPercentage
+      />
+      <InfluenceBar
+        style={{ marginVertical: 50 }}
+        height={8}
+        influence={-7}
+        range={10}
+        color={'#CA6862'}
+        displayPercentage
+      />
+      <AmplitudeRange
+        style={{ marginVertical: 20 }}
+        height={8}
+        min={0}
+        max={100}
+        minAmplitude={54}
+        maxAmplitude={64}
+        color={'#758DA4'}
+      />
       <BarChart
        data={[
           {

@@ -91,7 +91,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { PieChart, BarChart, PercentageBar, InfluenceBar, AmplitudeRange } from "ora-svg-charts";
+import { PieChart, BarChart, PercentageBar, InfluenceBar, AmplitudeRange, LevelBar } from "ora-svg-charts";
 import { Button, Image, StyleSheet, Text, View } from "react-native";
 
 function App() {
@@ -134,7 +134,13 @@ function App() {
         maxAmplitude={64}
         color={'#758DA4'}
       />
+      <LevelBar
+        style={{ marginTop: 30 }}
+        level={5}
+        colors={['#C3C9CE', '#86939E', '#74828F', '#687480', '#4D6071']}
+      />
       <BarChart
+        style={{ marginTop: 30 }}
        data={[
           {
             key: 'Becky',
